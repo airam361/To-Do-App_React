@@ -79,27 +79,29 @@ const TodoList = (props) => {
 
       {isLoading && <LoadingSpinner />}
       {!isLoading && (
-        <ul className={classes.items}>
-          {todos.map((todo) => (
-            <TodoItem
-              key={todo.id}
-              title={todo.title}
-              id={todo.id}
-              completed={todo.completed}
-              editHandler={props.editHandler}
-              refresh={refreshHandler}
-            />
-          ))}
-        </ul>
-      )}
+        <>
+          <ul className={classes.items}>
+            {todos.map((todo) => (
+              <TodoItem
+                key={todo.id}
+                title={todo.title}
+                id={todo.id}
+                completed={todo.completed}
+                editHandler={props.editHandler}
+                refresh={refreshHandler}
+              />
+            ))}
+          </ul>
 
-      <TodoPagination
-        totalTodos={totalTodos}
-        itemsPerPage={itemsPerPage}
-        currentPage={currentPage}
-        refresh={refreshHandler}
-        switchPage={switchPage}
-      />
+          <TodoPagination
+            totalTodos={totalTodos}
+            itemsPerPage={itemsPerPage}
+            currentPage={currentPage}
+            refresh={refreshHandler}
+            switchPage={switchPage}
+          />
+        </>
+      )}
     </div>
   );
 };

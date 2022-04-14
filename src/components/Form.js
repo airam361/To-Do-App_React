@@ -11,11 +11,9 @@ const Form = (props) => {
   const textareaRef = useRef();
 
   let { edit, id, content } = props.editData;
-  // let btnDescript = "Add TO DO";
 
   useEffect(() => {
     if (edit) {
-      // btnDescript = "Edit TO DO";
       setTextareaContent(content);
     }
   }, [edit]);
@@ -47,9 +45,8 @@ const Form = (props) => {
           return false;
         }
       });
-      setTextareaContent("");
     }
-    
+    setTextareaContent("");
     props.trigerRefresh(true);
   };
 
