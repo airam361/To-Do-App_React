@@ -1,0 +1,21 @@
+.sliding-image-container {
+  top: 7px;
+  width: 54px;
+  height: 41px;
+  animation: cowmove linear 40s infinite;
+  position: absolute;
+  z-index: 10;
+}
+.sliding-image {
+  background: url("/public/cow1.png") no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+@keyframes cowmove {
+  0% {
+    left: 240px;
+  }
+  100% {
+    left: 100%;
+  }
+}

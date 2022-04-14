@@ -1,0 +1,62 @@
+.container-left {
+  display: inline-block;
+  width: 30%;
+  margin-top: 1rem;
+}
+
+.todo-form {
+  position: sticky;
+  top: 64px;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: white;
+}
+.control {
+  margin-bottom: 1rem;
+}
+.control > label {
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+.control > textarea {
+  font: inherit;
+  padding: 0.35rem;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+  border: 1px solid #c1d1d1;
+  display: block;
+  width: 100%;
+  resize: vertical;
+  resize: vertical;
+  min-height: 5rem;
+}
+.control input {
+  cursor: pointer;
+}
+.control textarea:focus {
+  background-color: #f2fff8;
+  outline-color: #45b879;
+}
+
+.form-actions {
+  text-align: right;
+}
+.btn-disabled {
+  background-color: #ccc;
+}
+.form-actions button {
+  background-color: #45b879;
+  color: white;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  border: 2px solid #45b879;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.form-actions button:hover {
+  background-color: #fff;
+  color: #45b879;
+  border: 2px solid #45b879;
+}

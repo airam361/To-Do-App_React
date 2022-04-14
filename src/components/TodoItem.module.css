@@ -1,0 +1,41 @@
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 3rem;
+  min-width: 15rem;
+  border-radius: 12px;
+  background-color: white;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.item__text {
+  word-wrap: break-word;
+  flex-grow: 1;
+  margin-left: 1rem;
+  font-size: 14px;
+}
+.item__actions {
+  display: flex;
+  margin-left: 1rem;
+}
+
+.item button {
+  padding: 0;
+  margin: 3px;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 50%;
+  border: none;
+  width: 30px;
+  height: 30px;
+}
+.item button:hover {
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.item img {
+  width: 100%;
+}
